@@ -18,6 +18,7 @@ exports.handler = async (event, context, cb) => {
         category,
         shipping,
         featured,
+        farmers_location,
       } = product.fields
       const image = images[0].url
       return {
@@ -31,6 +32,7 @@ exports.handler = async (event, context, cb) => {
         category,
         shipping,
         featured,
+        farmers_location,
       }
     })
     return {
